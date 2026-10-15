@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp Message Viewer",
+  "description": "Real-time viewer for WhatsApp messages received on your WhatsApp number via Meta Cloud API webhook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
