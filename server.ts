@@ -4,6 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { completeBusinessSignup, metaSignupConfig, MetaSignupError, ConnectedBusinessAccount } from './metaSignup.ts';
 
 dotenv.config();
 
@@ -159,6 +160,7 @@ let messages: WhatsAppMessage[] = [...INITIAL_MESSAGES];
 let webhookLogs: WebhookLog[] = [];
 let isVerified = false;
 let lastVerifiedAt: string | null = null;
+let connectedAccounts: ConnectedBusinessAccount[] = [];
 
 // Initialize or load persistence
 function loadData() {
@@ -170,6 +172,7 @@ function loadData() {
       if (Array.isArray(data.webhookLogs)) webhookLogs = data.webhookLogs;
       if (data.isVerified !== undefined) isVerified = data.isVerified;
       if (data.lastVerifiedAt !== undefined) lastVerifiedAt = data.lastVerifiedAt;
+      if (Array.isArray(data.connectedAccounts)) connectedAccounts = data.connectedAccounts;
     }
   } catch (err) {
     console.error('Error loading whatsapp_store.json:', err);
@@ -190,6 +193,7 @@ function saveData() {
           webhookLogs: webhookLogs.slice(0, 50),
           isVerified,
           lastVerifiedAt,
+          connectedAccounts,
         },
         null,
         2
@@ -201,6 +205,19 @@ function saveData() {
 }
 
 loadData();
+
+function wabaIdsFromWebhookLogs() {
+  const ids = new Set<string>();
+  for (const log of webhookLogs) {
+    const entries = log.payload?.entry;
+    if (!Array.isArray(entries)) continue;
+    for (const entry of entries) {
+      const id = String(entry?.id ?? '');
+      if (/^\d{6,}$/.test(id)) ids.add(id);
+    }
+  }
+  return [...ids];
+}
 
 // SSE clients management
 const sseClients = new Set<Response>();
@@ -403,6 +420,42 @@ async function startServer() {
     }
   });
 
+  app.get('/api/meta/config', (_req: Request, res: Response) => {
+    res.json(metaSignupConfig());
+  });
+
+  app.get('/api/connected-accounts', (_req: Request, res: Response) => {
+    res.json({ accounts: connectedAccounts });
+  });
+
+  app.post('/api/meta/complete-signup', async (req: Request, res: Response) => {
+    try {
+      const accounts = await completeBusinessSignup({
+        code: req.body?.code,
+        redirectUri: req.body?.redirectUri,
+        redirectUris: req.body?.redirectUris,
+        wabaId: req.body?.wabaId,
+        phoneNumberId: req.body?.phoneNumberId,
+        fallbackWabaIds: wabaIdsFromWebhookLogs(),
+      });
+      for (const account of accounts) {
+        const index = connectedAccounts.findIndex(
+          (item) => item.wabaId === account.wabaId && item.phoneNumberId === account.phoneNumberId
+        );
+        if (index >= 0) connectedAccounts[index] = account;
+        else connectedAccounts.unshift(account);
+      }
+      saveData();
+      broadcastSSE({ type: 'ACCOUNT_CONNECTED', payload: { accounts: connectedAccounts } });
+      res.json({ accounts: connectedAccounts });
+    } catch (err) {
+      const status = err instanceof MetaSignupError ? err.status : 500;
+      const message = err instanceof Error ? err.message : 'Embedded signup failed';
+      console.error('Embedded signup failed:', message);
+      res.status(status).json({ error: message });
+    }
+  });
+
   // 3. Webhook Info & Config API
   app.get('/api/webhook-info', (req: Request, res: Response) => {
     const host = req.get('host') || 'localhost:3000';
@@ -551,10 +604,33 @@ async function startServer() {
     });
   });
 
+  app.get('/meta-oauth-callback', (_req: Request, res: Response) => {
+    res.type('html').send(`<!doctype html>
+<meta charset="utf-8">
+<title>Connecting WhatsApp</title>
+<p style="font-family: sans-serif">Returning to the viewer…</p>
+<script>
+  const params = new URLSearchParams(location.search);
+  const payload = {
+    type: 'WA_OAUTH_CODE',
+    code: params.get('code'),
+    state: params.get('state'),
+    error: params.get('error_description') || params.get('error')
+  };
+  if (window.opener) {
+    window.opener.postMessage(payload, location.origin);
+  }
+  window.close();
+</script>`);
+  });
+
   // Vite middleware in dev or static serve in prod
   if (!isProd) {
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: {
+        middlewareMode: true,
+        allowedHosts: ['.ngrok-free.dev', '.ngrok.io', '.trycloudflare.com'],
+      },
       appType: 'spa',
     });
     app.use(vite.middlewares);

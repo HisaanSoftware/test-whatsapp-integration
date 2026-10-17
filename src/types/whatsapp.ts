@@ -39,6 +39,22 @@ export interface WebhookLog {
   payload: any;
 }
 
+export interface ConnectedBusinessAccount {
+  wabaId: string;
+  phoneNumberId: string | null;
+  displayPhoneNumber: string | null;
+  verifiedName: string | null;
+  connectedAt: string;
+}
+
+export interface MetaSignupConfig {
+  configured: boolean;
+  appId: string;
+  configId: string;
+  graphVersion: string;
+  missing: string[];
+}
+
 export interface WebhookInfo {
   webhookUrl: string;
   verifyToken: string;

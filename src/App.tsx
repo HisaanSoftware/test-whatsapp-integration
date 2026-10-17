@@ -8,6 +8,7 @@ import {
   MessageSquare,
   Search,
   ShieldCheck,
+  QrCode,
   Sparkles,
   FileJson,
   Volume2,
@@ -19,10 +20,11 @@ import {
   ArrowLeft,
   X,
 } from 'lucide-react';
-import { WhatsAppContact, WhatsAppMessage, WebhookInfo } from './types/whatsapp';
+import { ConnectedBusinessAccount, WhatsAppContact, WhatsAppMessage, WebhookInfo } from './types/whatsapp';
 import { ContactItem } from './components/ContactItem';
 import { ChatView } from './components/ChatView';
 import { WebhookSetupModal } from './components/WebhookSetupModal';
+import { ConnectBusinessModal } from './components/ConnectBusinessModal';
 import { SimulatorModal } from './components/SimulatorModal';
 import { PayloadInspectorModal } from './components/PayloadInspectorModal';
 import { playWhatsAppChime } from './utils/audio';
@@ -39,6 +41,8 @@ export default function App() {
   const [isDark, setIsDark] = useState(true);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [isSetupOpen, setIsSetupOpen] = useState(false);
+  const [isConnectOpen, setIsConnectOpen] = useState(false);
+  const [connectedAccounts, setConnectedAccounts] = useState<ConnectedBusinessAccount[]>([]);
   const [isSimulatorOpen, setIsSimulatorOpen] = useState(false);
   const [isInspectorOpen, setIsInspectorOpen] = useState(false);
   const [simulatorContactPhone, setSimulatorContactPhone] = useState<string | undefined>(undefined);
@@ -56,9 +60,10 @@ export default function App() {
   // Initial data fetch
   const fetchData = async () => {
     try {
-      const [msgRes, infoRes] = await Promise.all([
+      const [msgRes, infoRes, accountsRes] = await Promise.all([
         fetch('/api/messages'),
         fetch('/api/webhook-info'),
+        fetch('/api/connected-accounts'),
       ]);
 
       if (msgRes.ok) {
@@ -73,6 +78,11 @@ export default function App() {
       if (infoRes.ok) {
         const info = await infoRes.json();
         setWebhookInfo(info);
+      }
+
+      if (accountsRes.ok) {
+        const data = await accountsRes.json();
+        setConnectedAccounts(data.accounts || []);
       }
     } catch (err) {
       console.error('Error fetching initial WhatsApp data:', err);
@@ -113,6 +123,8 @@ export default function App() {
 
           // Play incoming WhatsApp notification sound chime
           playWhatsAppChime(soundEnabled);
+        } else if (data.type === 'ACCOUNT_CONNECTED') {
+          setConnectedAccounts(data.payload.accounts || []);
         } else if (data.type === 'WEBHOOK_VERIFIED') {
           setWebhookInfo((prev) => (prev ? { ...prev, isVerified: true, lastVerifiedAt: data.payload.verifiedAt } : null));
         } else if (data.type === 'CONTACT_READ') {
@@ -214,6 +226,18 @@ export default function App() {
 
         {/* Right: Functional Action Controls */}
         <div className="flex items-center gap-1.5 md:gap-2">
+          <button
+            onClick={() => setIsConnectOpen(true)}
+            className="px-2.5 py-1.5 rounded-lg text-xs font-medium bg-[#00a884] hover:bg-[#008f6f] text-white transition-colors flex items-center gap-1.5 shadow-xs"
+            title="Connect a WhatsApp Business account by scanning Meta’s QR code"
+          >
+            <QrCode className="w-4 h-4" />
+            <span className="hidden sm:inline">Connect Business</span>
+            {connectedAccounts.length > 0 && (
+              <span className="w-2 h-2 rounded-full bg-white"></span>
+            )}
+          </button>
+
           {/* Webhook Configuration Button */}
           <button
             onClick={() => setIsSetupOpen(true)}
@@ -230,7 +254,7 @@ export default function App() {
           {/* Simulate Incoming Message Button */}
           <button
             onClick={() => handleOpenSimulator()}
-            className="px-2.5 py-1.5 rounded-lg text-xs font-medium bg-[#00a884] hover:bg-[#008f6f] text-white transition-colors flex items-center gap-1.5 shadow-xs"
+            className="px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-700 dark:text-[#d1d7db] hover:bg-slate-100 dark:hover:bg-[#111b21] transition-colors flex items-center gap-1.5 border border-slate-200 dark:border-slate-700"
             title="Simulate incoming WhatsApp message"
           >
             <Sparkles className="w-4 h-4" />
@@ -395,6 +419,12 @@ export default function App() {
       </div>
 
       {/* Modals and Drawers */}
+      <ConnectBusinessModal
+        isOpen={isConnectOpen}
+        onClose={() => setIsConnectOpen(false)}
+        onConnected={setConnectedAccounts}
+      />
+
       <WebhookSetupModal
         isOpen={isSetupOpen}
         onClose={() => setIsSetupOpen(false)}

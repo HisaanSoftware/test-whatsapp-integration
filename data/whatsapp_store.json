@@ -1,20 +1,52 @@
 {
   "contacts": [
     {
+      "phone": "+97471582277",
+      "name": "Hisaan International",
+      "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Hisaan%20International",
+      "lastMessageTimestamp": 1792091932,
+      "lastMessageText": "Hi",
+      "unreadCount": 0
+    },
+    {
+      "phone": "+97470911657",
+      "name": "Adil Muhammed",
+      "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Adil%20Muhammed",
+      "lastMessageTimestamp": 1792091778,
+      "lastMessageText": "Hllo",
+      "unreadCount": 0
+    },
+    {
+      "phone": "+97471580808",
+      "name": "Hisaan International",
+      "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Hisaan%20International",
+      "lastMessageTimestamp": 1792091731,
+      "lastMessageText": "Hello shibili",
+      "unreadCount": 0
+    },
+    {
+      "phone": "+16315551181",
+      "name": "test user name",
+      "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=test%20user%20name",
+      "lastMessageTimestamp": 1504902988,
+      "lastMessageText": "this is a text message",
+      "unreadCount": 0
+    },
+    {
       "phone": "+14155552671",
       "name": "Sarah Jenkins",
       "avatarUrl": "/src/assets/images/contact_sarah_portrait_1792083939207.jpg",
-      "lastMessageTimestamp": 1792083993,
-      "lastMessageText": "Sounds great! Looking forward to reviewing the deliverables.",
-      "unreadCount": 1
+      "lastMessageTimestamp": 1792085198,
+      "lastMessageText": "Hey there! Just checking in on the project status.",
+      "unreadCount": 0
     },
     {
       "phone": "+442079460912",
       "name": "Marcus Vance",
       "avatarUrl": "/src/assets/images/contact_marcus_portrait_1792083940491.jpg",
-      "lastMessageTimestamp": 1792076973,
-      "lastMessageText": "Here is the revised architecture blueprint diagram.",
-      "unreadCount": 2
+      "lastMessageTimestamp": 1792085019,
+      "lastMessageText": "Just pushed the final revision to staging. Feel free to review whenever you have time!",
+      "unreadCount": 0
     },
     {
       "phone": "+13125550143",
@@ -89,9 +121,984 @@
       "type": "text",
       "text": "Can you please confirm if the meeting link works?",
       "status": "received"
+    },
+    {
+      "id": "wamid.sim_1792085019447_ylld7",
+      "from": "+442079460912",
+      "senderName": "Marcus Vance",
+      "timestamp": 1792085019,
+      "type": "text",
+      "text": "Just pushed the final revision to staging. Feel free to review whenever you have time!",
+      "status": "received"
+    },
+    {
+      "id": "wamid.sim_1792085029013_bh3ha",
+      "from": "+14155552671",
+      "senderName": "Sarah Jenkins",
+      "timestamp": 1792085029,
+      "type": "location",
+      "text": "📍 Market Street Tech Campus",
+      "location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "name": "Market Street Tech Campus",
+        "address": "Market St, San Francisco, CA"
+      },
+      "status": "received"
+    },
+    {
+      "id": "wamid.sim_1792085198296_nta89",
+      "from": "+14155552671",
+      "senderName": "Sarah Jenkins",
+      "timestamp": 1792085198,
+      "type": "image",
+      "text": "Hey there! Just checking in on the project status.",
+      "mediaUrl": "/src/assets/images/mockup_project_diagram_1792083940690.jpg",
+      "mediaCaption": "Shared screenshot attachment 2344234",
+      "status": "received"
+    },
+    {
+      "id": "ABGGFlA5Fpa",
+      "from": "+16315551181",
+      "senderName": "test user name",
+      "timestamp": 1504902988,
+      "type": "text",
+      "text": "this is a text message",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUFFNzUxQjE3MUY0MThCOTdENDU2OUE5NURCMkNFMQA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088202,
+      "type": "text",
+      "text": "Hello",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTAwNDMyMUQ2QUM0MUFDNkE3MTMyNzdCNTE1QjUwNAA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088208,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUU3RDA5OTkyNzYyREE1NEQ2RkYyRjAxOEU1M0I2MwA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088218,
+      "type": "text",
+      "text": "How're you??",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUIyMDkyMTFGNTExNDBDQzY3QTBFN0E1RDQ5Mzk3MgA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088227,
+      "type": "text",
+      "text": "Good?",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUM4RTgyMEFDQzA5N0U0NkQ4RDc0MjI3RDA1MzQxNwA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088270,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTQ5MUEzQjIyMDU2QzUyRDQzM0E5NUY1RDkxRjg0MgA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088280,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUMyMEU4QUVFQTBCRTJBNzMwMTEyNDQ2RkVBNjAxRgA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088628,
+      "type": "text",
+      "text": "Goodndmd",
+      "status": "received"
+    },
+    {
+      "id": "wamid.sim_1792088644129_m3om7",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792088644,
+      "type": "text",
+      "text": "Hey there! Just checking in on the project status.bnmn",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTQ0QjA4RDZFNkVCNTEwNjU2REVEMENEQUY5QzRCQwA=",
+      "from": "+97471580808",
+      "senderName": "Hisaan International",
+      "timestamp": 1792091731,
+      "type": "text",
+      "text": "Hello shibili",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQ0Y0MDIwMjQ5QUQxRTAzNjNERkY3NTA1NTQ5NkI4MwA=",
+      "from": "+97470911657",
+      "senderName": "Adil Muhammed",
+      "timestamp": 1792091756,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQzgyQjQzNEYzMDJDMjc1QTk2OTI2NTYwRkRFRDM4RgA=",
+      "from": "+97470911657",
+      "senderName": "Adil Muhammed",
+      "timestamp": 1792091775,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQzYzMkVENEQ2NTk0RTJCMDY1RTE3MzQ2RDgyQjU1RQA=",
+      "from": "+97470911657",
+      "senderName": "Adil Muhammed",
+      "timestamp": 1792091778,
+      "type": "text",
+      "text": "Hllo",
+      "status": "received"
+    },
+    {
+      "id": "wamid.HBgLOTc0NzE1ODIyNzcVAgASGCBBNTU0RTJGRjQwMjY3QTJFNEIxOUVCQTMzNjExMEVFNAA=",
+      "from": "+97471582277",
+      "senderName": "Hisaan International",
+      "timestamp": 1792091932,
+      "type": "text",
+      "text": "Hi",
+      "status": "received"
     }
   ],
-  "webhookLogs": [],
-  "isVerified": false,
-  "lastVerifiedAt": null
+  "webhookLogs": [
+    {
+      "id": "log-1792091935016-4r7t",
+      "timestamp": "2026-10-15T19:18:55.016Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471582277",
+      "summary": "Message from Hisaan International: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471582277",
+                      "user_id": "QA.1021661854268750"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471582277",
+                      "from_user_id": "QA.1021661854268750",
+                      "id": "wamid.HBgLOTc0NzE1ODIyNzcVAgASGCBBNTU0RTJGRjQwMjY3QTJFNEIxOUVCQTMzNjExMEVFNAA=",
+                      "timestamp": "1792091932",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792091780232-2xjw",
+      "timestamp": "2026-10-15T19:16:20.232Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97470911657",
+      "summary": "Message from Adil Muhammed: Hllo",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Adil Muhammed"
+                      },
+                      "wa_id": "97470911657",
+                      "user_id": "QA.1390389399500573"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97470911657",
+                      "from_user_id": "QA.1390389399500573",
+                      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQzYzMkVENEQ2NTk0RTJCMDY1RTE3MzQ2RDgyQjU1RQA=",
+                      "timestamp": "1792091778",
+                      "text": {
+                        "body": "Hllo"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792091776682-igr0",
+      "timestamp": "2026-10-15T19:16:16.682Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97470911657",
+      "summary": "Message from Adil Muhammed: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Adil Muhammed"
+                      },
+                      "wa_id": "97470911657",
+                      "user_id": "QA.1390389399500573"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97470911657",
+                      "from_user_id": "QA.1390389399500573",
+                      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQzgyQjQzNEYzMDJDMjc1QTk2OTI2NTYwRkRFRDM4RgA=",
+                      "timestamp": "1792091775",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792091758410-7v32",
+      "timestamp": "2026-10-15T19:15:58.410Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97470911657",
+      "summary": "Message from Adil Muhammed: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Adil Muhammed"
+                      },
+                      "wa_id": "97470911657",
+                      "user_id": "QA.1390389399500573"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97470911657",
+                      "from_user_id": "QA.1390389399500573",
+                      "id": "wamid.HBgLOTc0NzA5MTE2NTcVAgASGCBBQ0Y0MDIwMjQ5QUQxRTAzNjNERkY3NTA1NTQ5NkI4MwA=",
+                      "timestamp": "1792091756",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792091733370-h78r",
+      "timestamp": "2026-10-15T19:15:33.370Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Hello shibili",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTQ0QjA4RDZFNkVCNTEwNjU2REVEMENEQUY5QzRCQwA=",
+                      "timestamp": "1792091731",
+                      "text": {
+                        "body": "Hello shibili"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-sim-1792088644130",
+      "timestamp": "2026-10-15T18:24:04.130Z",
+      "method": "SIMULATOR /api/simulate-message",
+      "senderPhone": "+97471580808",
+      "summary": "[Simulator] Hisaan International: Hey there! Just checking in on the proje",
+      "payload": {
+        "simulator": true,
+        "message": {
+          "id": "wamid.sim_1792088644129_m3om7",
+          "from": "+97471580808",
+          "senderName": "Hisaan International",
+          "timestamp": 1792088644,
+          "type": "text",
+          "text": "Hey there! Just checking in on the project status.bnmn",
+          "status": "received"
+        }
+      }
+    },
+    {
+      "id": "log-1792088630753-vrsx",
+      "timestamp": "2026-10-15T18:23:50.753Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Goodndmd",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUMyMEU4QUVFQTBCRTJBNzMwMTEyNDQ2RkVBNjAxRgA=",
+                      "timestamp": "1792088628",
+                      "text": {
+                        "body": "Goodndmd"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088281831-t7xg",
+      "timestamp": "2026-10-15T18:18:01.831Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTQ5MUEzQjIyMDU2QzUyRDQzM0E5NUY1RDkxRjg0MgA=",
+                      "timestamp": "1792088280",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088272313-l2ln",
+      "timestamp": "2026-10-15T18:17:52.313Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUM4RTgyMEFDQzA5N0U0NkQ4RDc0MjI3RDA1MzQxNwA=",
+                      "timestamp": "1792088270",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088229397-t2nk",
+      "timestamp": "2026-10-15T18:17:09.397Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Good?",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUIyMDkyMTFGNTExNDBDQzY3QTBFN0E1RDQ5Mzk3MgA=",
+                      "timestamp": "1792088227",
+                      "text": {
+                        "body": "Good?"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088219682-6tqg",
+      "timestamp": "2026-10-15T18:16:59.682Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: How're you??",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUU3RDA5OTkyNzYyREE1NEQ2RkYyRjAxOEU1M0I2MwA=",
+                      "timestamp": "1792088218",
+                      "text": {
+                        "body": "How're you??"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088210686-l5uu",
+      "timestamp": "2026-10-15T18:16:50.686Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Hi",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNTAwNDMyMUQ2QUM0MUFDNkE3MTMyNzdCNTE1QjUwNAA=",
+                      "timestamp": "1792088208",
+                      "text": {
+                        "body": "Hi"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792088204417-umm9",
+      "timestamp": "2026-10-15T18:16:44.417Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+97471580808",
+      "summary": "Message from Hisaan International: Hello",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "1150044974017077",
+            "changes": [
+              {
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "15556749039",
+                    "phone_number_id": "1372970785899255"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "Hisaan International"
+                      },
+                      "wa_id": "97471580808",
+                      "user_id": "QA.2735595146857474"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "from": "97471580808",
+                      "from_user_id": "QA.2735595146857474",
+                      "id": "wamid.HBgLOTc0NzE1ODA4MDgVAgASGCBBNUFFNzUxQjE3MUY0MThCOTdENDU2OUE5NURCMkNFMQA=",
+                      "timestamp": "1792088202",
+                      "text": {
+                        "body": "Hello"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "field": "messages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792087772266-0fvt",
+      "timestamp": "2026-10-15T18:09:32.266Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+16315551181",
+      "summary": "Message from test user name: this is a text message",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "0",
+            "changes": [
+              {
+                "field": "messages",
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "16505551111",
+                    "phone_number_id": "123456123"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "test user name"
+                      },
+                      "wa_id": "16315551181",
+                      "user_id": "US.13491208655302741918"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "id": "ABGGFlA5Fpa",
+                      "timestamp": "1504902988",
+                      "from": "16315551181",
+                      "from_user_id": "US.13491208655302741918",
+                      "type": "text",
+                      "text": {
+                        "body": "this is a text message"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792087751897-x2mr",
+      "timestamp": "2026-10-15T18:09:11.897Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+16315551181",
+      "summary": "Message from test user name: this is a text message",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "0",
+            "changes": [
+              {
+                "field": "messages",
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "16505551111",
+                    "phone_number_id": "123456123"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "test user name"
+                      },
+                      "wa_id": "16315551181",
+                      "user_id": "US.13491208655302741918"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "id": "ABGGFlA5Fpa",
+                      "timestamp": "1504902988",
+                      "from": "16315551181",
+                      "from_user_id": "US.13491208655302741918",
+                      "type": "text",
+                      "text": {
+                        "body": "this is a text message"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-1792087632299-6vfu",
+      "timestamp": "2026-10-15T18:07:12.299Z",
+      "method": "POST /api/webhook/whatsapp",
+      "senderPhone": "+16315551181",
+      "summary": "Message from test user name: this is a text message",
+      "payload": {
+        "object": "whatsapp_business_account",
+        "entry": [
+          {
+            "id": "0",
+            "changes": [
+              {
+                "field": "messages",
+                "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                    "display_phone_number": "16505551111",
+                    "phone_number_id": "123456123"
+                  },
+                  "contacts": [
+                    {
+                      "profile": {
+                        "name": "test user name"
+                      },
+                      "wa_id": "16315551181",
+                      "user_id": "US.13491208655302741918"
+                    }
+                  ],
+                  "messages": [
+                    {
+                      "id": "ABGGFlA5Fpa",
+                      "timestamp": "1504902988",
+                      "from": "16315551181",
+                      "from_user_id": "US.13491208655302741918",
+                      "type": "text",
+                      "text": {
+                        "body": "this is a text message"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "log-sim-1792085198296",
+      "timestamp": "2026-10-15T17:26:38.296Z",
+      "method": "SIMULATOR /api/simulate-message",
+      "senderPhone": "+14155552671",
+      "summary": "[Simulator] Sarah Jenkins: Hey there! Just checking in on the proje",
+      "payload": {
+        "simulator": true,
+        "message": {
+          "id": "wamid.sim_1792085198296_nta89",
+          "from": "+14155552671",
+          "senderName": "Sarah Jenkins",
+          "timestamp": 1792085198,
+          "type": "image",
+          "text": "Hey there! Just checking in on the project status.",
+          "mediaUrl": "/src/assets/images/mockup_project_diagram_1792083940690.jpg",
+          "mediaCaption": "Shared screenshot attachment 2344234",
+          "status": "received"
+        }
+      }
+    },
+    {
+      "id": "log-sim-1792085029014",
+      "timestamp": "2026-10-15T17:23:49.014Z",
+      "method": "SIMULATOR /api/simulate-message",
+      "senderPhone": "+14155552671",
+      "summary": "[Simulator] Sarah Jenkins: 📍 Market Street Tech Campus",
+      "payload": {
+        "simulator": true,
+        "message": {
+          "id": "wamid.sim_1792085029013_bh3ha",
+          "from": "+14155552671",
+          "senderName": "Sarah Jenkins",
+          "timestamp": 1792085029,
+          "type": "location",
+          "text": "📍 Market Street Tech Campus",
+          "location": {
+            "latitude": 37.7749,
+            "longitude": -122.4194,
+            "name": "Market Street Tech Campus",
+            "address": "Market St, San Francisco, CA"
+          },
+          "status": "received"
+        }
+      }
+    },
+    {
+      "id": "log-sim-1792085019448",
+      "timestamp": "2026-10-15T17:23:39.448Z",
+      "method": "SIMULATOR /api/simulate-message",
+      "senderPhone": "+442079460912",
+      "summary": "[Simulator] Marcus Vance: Just pushed the final revision to stagin",
+      "payload": {
+        "simulator": true,
+        "message": {
+          "id": "wamid.sim_1792085019447_ylld7",
+          "from": "+442079460912",
+          "senderName": "Marcus Vance",
+          "timestamp": 1792085019,
+          "type": "text",
+          "text": "Just pushed the final revision to staging. Feel free to review whenever you have time!",
+          "status": "received"
+        }
+      }
+    }
+  ],
+  "isVerified": true,
+  "lastVerifiedAt": "2026-10-15T18:06:56.641Z",
+  "connectedAccounts": [
+    {
+      "wabaId": "1150044974017077",
+      "phoneNumberId": "1372970785899255",
+      "displayPhoneNumber": "+1 555-674-9039",
+      "verifiedName": "Test Number",
+      "connectedAt": "2026-10-15T19:17:24.491Z"
+    }
+  ]
 }
